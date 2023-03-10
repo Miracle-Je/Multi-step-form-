@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="box-container">
+      <aside class="check-container">
+        <div class="ch-box info">
+          <div class="circle"><span class="span1 round">1</span></div>
+          <div class="title">
+            <h3>step 1</h3>
+            <h2>Your info</h2>
+          </div>
+        </div>
+
+        <div class="ch-box select">
+          <div class="circle"><span class="span2">2</span></div>
+          <div class="title">
+            <h3>step 2</h3>
+            <h2>select plan</h2>
+          </div>
+        </div>
+
+        <div class="ch-box add">
+          <div class="circle"><span class="span3">3</span></div>
+          <div class="title">
+            <h3>step 3</h3>
+            <h2>add-ons</h2>
+          </div>
+        </div>
+
+        <div class="ch-box summary">
+          <div class="circle"><span class="span4">4</span></div>
+          <div class="title">
+            <h3>step 4</h3>
+            <h2>summary</h2>
+          </div>
+        </div>
+      </aside>
+      <form class="form-container">
+        <div class="section1">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+
+          <section>
+            <label for="">Name</label>
+            <input type="text" placeholder="e.g. Stephen King" />
+
+            <label for="">Email Address</label>
+            <input type="email" placeholder="e.g. stephenking@lorem.com " />
+
+            <label for="">Phone Number</label>
+            <input type="number" placeholder=" e.g. +1 234 567 890" />
+          </section>
+        </div>
+
+        <!-- The select page -->
+        <div class="section2 hidden">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+
+          <section>
+            <div class="section2-box">
+              <div class="plan-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon first"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"
+                  />
+                </svg>
+                <div class="divide">
+                  <h4>Arcade</h4>
+                  <p>$9/mo</p>
+                  <p class="months">2 months free</p>
+                </div>
+              </div>
+
+              <div class="plan-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon second"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                  />
+                </svg>
+
+                <div class="divide">
+                  <h4>Advanced</h4>
+                  <p>$9/mo</p>
+                  <p class="months">2 months free</p>
+                </div>
+              </div>
+
+              <div class="plan-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon third"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+                  />
+                </svg>
+
+                <div class="divide">
+                  <h4>Pro</h4>
+                  <p>$9/mo</p>
+                  <p class="months">2 months free</p>
+                </div>
+              </div>
+            </div>
+            <div class="monthly">
+              <div class="toggle-container">
+                <p>monthly</p>
+                <div class="toggle"><div class="rounded my-toggle"></div></div>
+                <p>yearly</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="section3 hidden">
+          <h1>My add-ons</h1>
+          <p>Add-ons help enhance your gaming experience</p>
+
+          <section>
+            <div class="sec3-container">
+              <span class="icons"
+                ><i class="fa-solid fa-square-check fa-2x"></i
+              ></span>
+              <div class="tex">
+                <h4>Online service</h4>
+                <p>Access to multiplayer games</p>
+              </div>
+              <p class="p">+$1/mo</p>
+            </div>
+
+            <div class="sec3-container">
+              <span class="icons"
+                ><i class="fa-solid fa-square-check fa-2x"></i
+              ></span>
+              <div class="tex">
+                <h4>Larger storage</h4>
+                <p>Access to multiplayer games</p>
+              </div>
+              <p class="p">+$1/mo</p>
+            </div>
+
+            <div class="sec3-container">
+              <span class="icons"
+                ><i class="fa-solid fa-square-check fa-2x"></i
+              ></span>
+              <div class="tex">
+                <h4>Customizable profile</h4>
+                <p>Access to multiplayer games</p>
+              </div>
+              <p class="p">+$1/mo</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="section4 hidden">
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming</p>
+
+          <section>
+            <div class="sec4-container">
+              <div class="tex">
+                <h4>Arcade(Monthly)</h4>
+                <p>Change</p>
+              </div>
+              <p class="p">$90/mo</p>
+            </div>
+
+            <div class="sec4-container">
+              <div class="tex">
+                <p class="text">Online service</p>
+                <p>Larger storage</p>
+              </div>
+              <div class="p-container">
+                <p class="p">+$1/mo</p>
+                <p class="p">+$1/mo</p>
+              </div>
+            </div>
+          </section>
+          <div class="total-con">
+            <div class="tex">
+              <p class="text">Total(per month)</p>
+            </div>
+            <div class="p-container">
+              <p class="pp">+$12/mo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section5 hidden">
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming</p>
+
+          <section>
+            <div class="sec4-container">
+              <div class="tex">
+                <h4>Arcade(Yearly)</h4>
+                <p>Change</p>
+              </div>
+              <p class="p">$90/yr</p>
+            </div>
+
+            <div class="sec4-container">
+              <div class="tex">
+                <p class="text">Online service</p>
+                <p>Larger storage</p>
+              </div>
+              <div class="p-container">
+                <p class="p">+$10/yr</p>
+                <p class="p">+$20/yr</p>
+              </div>
+            </div>
+          </section>
+          <div class="total-con">
+            <div class="tex">
+              <p class="text">Total(per year)</p>
+            </div>
+            <div class="p-container">
+              <p class="pp">+$120/yr</p>
+            </div>
+          </div>
+        </div>
+        <div class="section6 hidden">
+          <section>
+            <div class="last-icon">
+              <i class="fa-sharp fa-solid fa-circle-check fa-xl"></i>
+            </div>
+            <h4>Thank you!</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur ipsum harum cum commodi magnam nulla adipisci,
+              exercitationem error incidunt, ratione culpa! Quibusdam itaque
+              quis doloribus repellat cupiditate.
+            </p>
+          </section>
+        </div>
+        <div class="btn">
+          <span id="back-btn" class="back-btn none">Go Back</span>
+          <span id="next-btn" class="next-btn">Next Step</span>
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
